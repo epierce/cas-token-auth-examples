@@ -38,7 +38,7 @@
  
     <properties>
         <cas.version>3.5.2</cas.version>
-        <cas-token.version>0.3-SNAPSHOT</cas-token.version>
+        <cas-token.version>0.3</cas-token.version>
     </properties>
  
         <repositories>

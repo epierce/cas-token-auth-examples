@@ -1,0 +1,12 @@
+<legend>Auth Token Generator</legend>
+
+<h4>JSON data</h4>
+<pre class="prettyprint"><?php echo $jsonData; ?></pre>
+
+<h4>Token Value</h4>
+<pre class="prettyprint"><?php echo wordwrap($encrytedToken, 60, "\n", true); ?></pre>
+
+<h4>Link to CAS Server</h4>
+<pre class="prettyprint"><?php echo $finalURL; ?></pre>
+
+<a href="<?php echo $finalURL; ?>" class="btn btn-primary">Login to CAS</a>

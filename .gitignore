@@ -10,3 +10,6 @@ target/
 # IntelliJ Stuff #
 .idea/*
 *.iml
+
+.classpath
+.project

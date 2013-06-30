@@ -29,6 +29,7 @@
         <evaluate expression="initialFlowSetupAction" />
     </on-start>
   <!-- 
+    cas-server-extension-token
     Look for an authentication token
   -->
   <action-state id="tokenAuthAction">
