@@ -274,6 +274,10 @@
   <bean id="credentialsValidator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"
         p:messageInterpolator-ref="messageInterpolator"/>
 
+  <!-- 
+    cas-server-extension-token
+   Authentication token Web-flow action
+  -->
   <bean id="tokenAuthAction" class="edu.usf.cims.cas.support.token.web.flow.TokenAuthAction"
     p:centralAuthenticationService-ref="centralAuthenticationService" />
 

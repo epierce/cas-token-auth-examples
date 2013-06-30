@@ -128,7 +128,7 @@
           | details, see https://github.com/epierce/cas-server-extension-token
           +-->
         <bean class="edu.usf.cims.cas.support.token.authentication.handler.support.TokenAuthenticationHandler"
-          p:maxDrift="120"
+          p:maxDrift="60"
           p:keystore-ref="jsonKeystore" />
         <!--
           | This is the authentication handler declaration that every CAS deployer will need to change before deploying CAS 
@@ -147,9 +147,8 @@
    | This bean defines the JSON file that stores all of the encryption keys for the token-based authentication.
    +-->
     <bean class="edu.clayton.cas.support.token.keystore.JSONKeystore" id="jsonKeystore">
-      <constructor-arg value="/tmp/keystore.json" />
+      <constructor-arg value="classpath:keystore.json" />
     </bean>
- 
 
   <!--
   This bean defines the security roles for the Services Management application.  Simple deployments can use the in-memory version.
